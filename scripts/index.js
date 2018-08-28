@@ -1,180 +1,4 @@
-const MOCK_DATA = {
-	"kind": "youtube#searchListResponse",
-	"etag": "\"XI7nbFXulYBIpL0ayR_gDh3eu1k/xaJILPX0REOVC_KkrSYapRPhcDo\"",
-	"nextPageToken": "CAUQAA",
-	"regionCode": "US",
-	"pageInfo": {
-	 "totalResults": 1000000,
-	 "resultsPerPage": 5
-	},
-	"items": [
-	 {
-	  "kind": "youtube#searchResult",
-	  "etag": "\"XI7nbFXulYBIpL0ayR_gDh3eu1k/GaxCGxTXq4C7dgFQOZPry_Vr758\"",
-	  "id": {
-	   "kind": "youtube#video",
-	   "videoId": "lHGVZp2jZBc"
-	  },
-	  "snippet": {
-	   "publishedAt": "2017-11-04T07:00:01.000Z",
-	   "channelId": "UCY2jUnU118sVkdj2xafiJ0g",
-	   "title": "PJ Masks Full Episodes | Gekko Loses his Voice! | 1 Hour Compilation | Cartoons for Children #72",
-	   "description": "_ Subscribe for more PJ Masks videos: http://bit.ly/2gsj5gv _ Watch brand NEW PJ Masks videos: ...",
-	   "thumbnails": {
-		"default": {
-		 "url": "https://i.ytimg.com/vi/lHGVZp2jZBc/default.jpg",
-		 "width": 120,
-		 "height": 90
-		},
-		"medium": {
-		 "url": "https://i.ytimg.com/vi/lHGVZp2jZBc/mqdefault.jpg",
-		 "width": 320,
-		 "height": 180
-		},
-		"high": {
-		 "url": "https://i.ytimg.com/vi/lHGVZp2jZBc/hqdefault.jpg",
-		 "width": 480,
-		 "height": 360
-		}
-	   },
-	   "channelTitle": "PJ Masks Official",
-	   "liveBroadcastContent": "none"
-	  }
-	 },
-	 {
-	  "kind": "youtube#searchResult",
-	  "etag": "\"XI7nbFXulYBIpL0ayR_gDh3eu1k/EYQ3GP7V-2p8hv9BrAjHflC1fiE\"",
-	  "id": {
-	   "kind": "youtube#video",
-	   "videoId": "BlacyJsokzo"
-	  },
-	  "snippet": {
-	   "publishedAt": "2018-07-29T13:00:01.000Z",
-	   "channelId": "UC6E2mP01ZLH_kbAyeazCNdg",
-	   "title": "CHOMPED by a GECKO!",
-	   "description": "Please SUBSCRIBE - http://bit.ly/BWchannel Buy Brave Wilderness Gear - http://bit.ly/BWshopping Brave Wilderness on Instagram: http://bit.ly/BraveGram ...",
-	   "thumbnails": {
-		"default": {
-		 "url": "https://i.ytimg.com/vi/BlacyJsokzo/default.jpg",
-		 "width": 120,
-		 "height": 90
-		},
-		"medium": {
-		 "url": "https://i.ytimg.com/vi/BlacyJsokzo/mqdefault.jpg",
-		 "width": 320,
-		 "height": 180
-		},
-		"high": {
-		 "url": "https://i.ytimg.com/vi/BlacyJsokzo/hqdefault.jpg",
-		 "width": 480,
-		 "height": 360
-		}
-	   },
-	   "channelTitle": "Brave Wilderness",
-	   "liveBroadcastContent": "none"
-	  }
-	 },
-	 {
-	  "kind": "youtube#searchResult",
-	  "etag": "\"XI7nbFXulYBIpL0ayR_gDh3eu1k/9ixy6SK0AbGM6VuQ8BapEN8-DBk\"",
-	  "id": {
-	   "kind": "youtube#video",
-	   "videoId": "M4ZtZTZPkBU"
-	  },
-	  "snippet": {
-	   "publishedAt": "2016-09-08T11:00:01.000Z",
-	   "channelId": "UC44eGZ76AJLHAxPaJ_MW2RA",
-	   "title": "Assistant Unboxes PJ Masks Gecko and Owlette and Catboy Toys",
-	   "description": "We love Disney's PJ Masks! Please Subscribe Here http://www.youtube.com/user/TheEngineeringFamily?sub_confirmation=1 The Assistant and Mr. Engineer ...",
-	   "thumbnails": {
-		"default": {
-		 "url": "https://i.ytimg.com/vi/M4ZtZTZPkBU/default.jpg",
-		 "width": 120,
-		 "height": 90
-		},
-		"medium": {
-		 "url": "https://i.ytimg.com/vi/M4ZtZTZPkBU/mqdefault.jpg",
-		 "width": 320,
-		 "height": 180
-		},
-		"high": {
-		 "url": "https://i.ytimg.com/vi/M4ZtZTZPkBU/hqdefault.jpg",
-		 "width": 480,
-		 "height": 360
-		}
-	   },
-	   "channelTitle": "TheEngineeringFamily",
-	   "liveBroadcastContent": "none"
-	  }
-	 },
-	 {
-	  "kind": "youtube#searchResult",
-	  "etag": "\"XI7nbFXulYBIpL0ayR_gDh3eu1k/p2E-ek97Tv1utc22fEdaOarzpqY\"",
-	  "id": {
-	   "kind": "youtube#video",
-	   "videoId": "EoMEbVAGr9c"
-	  },
-	  "snippet": {
-	   "publishedAt": "2018-04-07T16:30:00.000Z",
-	   "channelId": "UCpdBIibjN9cdNm6qRLb0cpw",
-	   "title": "16 Things That Leopard Geckos Do!",
-	   "description": "Inspired by Taylor Nicole Dean's video on her snakes doing things, I figured I'd show you guys a few things Leopard Geckos do :) MERCH ...",
-	   "thumbnails": {
-		"default": {
-		 "url": "https://i.ytimg.com/vi/EoMEbVAGr9c/default.jpg",
-		 "width": 120,
-		 "height": 90
-		},
-		"medium": {
-		 "url": "https://i.ytimg.com/vi/EoMEbVAGr9c/mqdefault.jpg",
-		 "width": 320,
-		 "height": 180
-		},
-		"high": {
-		 "url": "https://i.ytimg.com/vi/EoMEbVAGr9c/hqdefault.jpg",
-		 "width": 480,
-		 "height": 360
-		}
-	   },
-	   "channelTitle": "Leopard Gecko",
-	   "liveBroadcastContent": "none"
-	  }
-	 },
-	 {
-	  "kind": "youtube#searchResult",
-	  "etag": "\"XI7nbFXulYBIpL0ayR_gDh3eu1k/OlPX7eNPWx_MzRZHcHn9rB-ENNA\"",
-	  "id": {
-	   "kind": "youtube#video",
-	   "videoId": "TmK1JsWkz4w"
-	  },
-	  "snippet": {
-	   "publishedAt": "2018-03-08T10:49:00.000Z",
-	   "channelId": "UCqUgtyscmKpvEBDgEIhXgKg",
-	   "title": "Geckos Make The Cutest Pets – Funny and Adorable Leopard / Crested Geckos Compilation 2018",
-	   "description": "Geckos may not be as playful and cuddly as dogs and cats, but they make awesome pets too! You'll be surpise how cute, funny and curious Leopard and ...",
-	   "thumbnails": {
-		"default": {
-		 "url": "https://i.ytimg.com/vi/TmK1JsWkz4w/default.jpg",
-		 "width": 120,
-		 "height": 90
-		},
-		"medium": {
-		 "url": "https://i.ytimg.com/vi/TmK1JsWkz4w/mqdefault.jpg",
-		 "width": 320,
-		 "height": 180
-		},
-		"high": {
-		 "url": "https://i.ytimg.com/vi/TmK1JsWkz4w/hqdefault.jpg",
-		 "width": 480,
-		 "height": 360
-		}
-	   },
-	   "channelTitle": "Break Time",
-	   "liveBroadcastContent": "none"
-	  }
-	 }
-	]
-   }   
+
 const API_KEY = 'AIzaSyDdHjtKqwKjSFmLNG7LJIkZPXXC_rt1SDc';
 
 /*
@@ -190,13 +14,7 @@ const API_KEY = 'AIzaSyDdHjtKqwKjSFmLNG7LJIkZPXXC_rt1SDc';
     thumbnail: 'https://img.youtube.com/some/thumbnail.jpg'
   }
 */
-const store = {
-	videos: []
-};
 
-// TASK: Add the Youtube Search API Base URL here:
-// Documentation is here: https://developers.google.com/youtube/v3/docs/search/list#usage
-const BASE_URL = 'https://www.googleapis.com/youtube/v3/search';
 
 /**
  * @function fetchVideos
@@ -212,7 +30,8 @@ const BASE_URL = 'https://www.googleapis.com/youtube/v3/search';
 //    as the last argument
 //
 // TEST IT! Execute this function and console log the results inside the callback.
-const fetchVideos = function(searchTerm, callback) {
+
+/* const fetchVideos = function(searchTerm, callback) {
 	const queryObject = {
 		'maxresults': '5',
 		'part': 'snippet',
@@ -223,6 +42,7 @@ const fetchVideos = function(searchTerm, callback) {
 
 	$.getJSON(BASE_URL, queryObject, callback);
 };
+*/
 
 /**
  * @function decorateResponse
@@ -239,6 +59,8 @@ const fetchVideos = function(searchTerm, callback) {
 //
 // TEST IT! Grab an example API response and send it into the function - make sure
 // you get back the object you want.
+
+/*
 const decorateResponse = function(response) {
 	return response.items.map(item => {
 		return {
@@ -248,6 +70,7 @@ const decorateResponse = function(response) {
 		};
 	});
 };
+*/
 
 /**
  * @function generateVideoItemHtml
@@ -275,9 +98,10 @@ const generateVideoItemHtml = function(video) {
 // TASK:
 // 1. Set the received array as the value held in store.videos
 // TEST IT!
-const addVideosToStore = function(videos) {
+/* const addVideosToStore = function(videos) {
 	store.videos = videos;
 };
+*/
 
 
 /**
