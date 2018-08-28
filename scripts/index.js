@@ -1,4 +1,4 @@
-const API_KEY = 'YOUR_KEY_HERE';
+const API_KEY = 'AIzaSyDdHjtKqwKjSFmLNG7LJIkZPXXC_rt1SDc';
 
 /*
   We want our store to hold an array of "decorated" video objects - i.e. objects that
