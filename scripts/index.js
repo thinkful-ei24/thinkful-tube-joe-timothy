@@ -328,3 +328,5 @@ $(function () {
 	// 1. Run `handleFormSubmit` to bind the event listener to the DOM
 	handleFormSubmit();
 });
+
+console.log('hi');
