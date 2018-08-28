@@ -101,7 +101,7 @@ const generateVideoItemHtml = function(video) {
 // 1. Set the received array as the value held in store.videos
 // TEST IT!
 const addVideosToStore = function(videos) {
-
+	store.videos = videos;
 };
 
 
@@ -114,7 +114,8 @@ const addVideosToStore = function(videos) {
 // 2. Add this array of DOM elements to the appropriate DOM element
 // TEST IT!
 const render = function() {
-
+	const elements = store.videos.map(generateVideoItemHtml);
+	$('.results').html(elements);
 };
 
 /**
