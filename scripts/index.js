@@ -70,7 +70,7 @@ const decorateResponse = function(response) {
 			id: item.id.videoId,
 			title: item.snippet.title,
 			thumbnail: item.snippet.thumbnails.medium.url
-		}
+		};
 	});
 };
 
@@ -84,7 +84,12 @@ const decorateResponse = function(response) {
 // 1. Using the decorated object, return an HTML string containing all the expected
 // TEST IT!
 const generateVideoItemHtml = function(video) {
-
+	console.log (`
+		<li data-video-id=${video.id}>
+			<img src=${video.thumbnail}>
+			<h2>${video.title}</h2>
+		</li>
+	`);
 };
 
 /**
