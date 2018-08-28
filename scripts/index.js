@@ -116,6 +116,7 @@ const addVideosToStore = function(videos) {
 const render = function() {
 	const elements = store.videos.map(generateVideoItemHtml);
 	$('.results').html(elements);
+	console.log('render function is running');
 };
 
 /**
