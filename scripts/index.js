@@ -1,3 +1,5 @@
+'use strict';
+
 const API_KEY = 'AIzaSyDdHjtKqwKjSFmLNG7LJIkZPXXC_rt1SDc';
 
 /*
@@ -63,7 +65,13 @@ const fetchVideos = function(searchTerm, callback) {
 // TEST IT! Grab an example API response and send it into the function - make sure
 // you get back the object you want.
 const decorateResponse = function(response) {
-
+	return response.items.map(item => {
+		return {
+			id: item.id.videoId,
+			title: item.snippet.title,
+			thumbnail: item.snippet.thumbnails.medium.url
+		}
+	});
 };
 
 /**
